@@ -1,0 +1,258 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 0px 5px 10px #d3d3d3;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+header img{
+    width: 160px;
+    height: 50px;
+}
+#menubutton {
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e42424;
+    margin-left: 2em;
+}
+
+header nav{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    flex-basis: 100%;
+}
+
+input[type="checkbox"]:checked+nav {
+    height: 195px;
+}
+
+.lni {
+    color: #e42424;
+    font-size: 2em;
+}
+
+.buttonmenu {
+    background-image: linear-gradient(to right,#6cc1e2, #392f7a);
+    color: #ffffff;
+    padding: 0.5em;
+    text-decoration: none;
+}
+/* MAIN */
+
+#banner{
+    background-image: url(../images/banner.jpg);
+    filter: brightness(90%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000000;
+}
+#banner .buttonmenu{
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9);
+    }
+
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+#banner h1{
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-top: 0.2em;
+}
+#banner p{
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+.slide h1{
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-top: 1em;
+}
+
+.slide div{
+    text-align: center;
+    padding: 0.5em 1.5em;
+}
+.slide div img{
+    width: 100%;
+}
+.slide div .lni{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-top: 1em;
+    padding: 0 0.5em;
+}
+.slide p{
+    padding: 0.8em;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+.slide h4{
+    font-size: 2.6rem;
+    line-height: 1.1;
+    text-align: center;
+    padding: 0 0.5em;
+}
+#centerblu{
+    background-color: #0c0663;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 6em;
+}
+#centerblu h2{
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#centerblu p{
+    padding-top: 1.5em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.5em;
+}
+#centerblu .buttonmenu{
+    padding: 0.5em 1em ;
+    font-size: 1.9rem;
+}
+#future {
+    padding: 0;
+    /*padding-left: 1em;
+    padding-right: ;
+    padding-bottom: 1.5em;*/
+}
+#future .lni{
+    font-size: 1em;
+}
+
+/*PAGINA CONTATTI*/
+.slide fieldset{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.slide #nome{
+    padding: 0.5em;
+    font-size: 1em;
+    font-style: italic;
+}
+.slide #email{
+    padding: 0.5em;
+    font-size: 1em;
+    font-style: italic;
+}
+.slide #testo{
+    padding: 0.5em;
+    font-size: 1em;
+    font-style: italic;
+
+}
+.slide .buttonmenu{
+    border: none;
+    font-size: 1.9rem;
+    margin-left:3.5em;
+    margin-right:3.5em;
+    padding-top: 0.8em; 
+    padding-bottom: 0.8em; 
+}
+caption{
+    font-size: 3rem;
+    padding-top: 2em;
+}
+#tabella{
+    max-width: 100%;
+    margin:2em ;
+}
+tbody tr:nth-child(odd){
+    background-color: #d2dce7;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(238, 238, 238);
+    padding: 1.2em 2.5em;
+}
+footer h4{
+    font-size: 1.8rem;
+    margin: 1em 0;
+    line-height: 1;
+}
+address{
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+#social nav ul{
+    display: flex;
+    padding-bottom: 2em;
+}
+#social nav ul li{
+    margin-right: 0.3em;
+}
+#social p{
+    line-height: 1.5em;
+}
+fieldset{
+    display: flex;
+    flex-direction: column; 
+}
+#email{
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+footer .buttonmenu{
+    border: none;
+    font-size: 1.9rem;
+}
+/*RESPONSIVE */
+@media screen and (max-width:768px) {
+    thead {display: none;}
+    td {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5px;
+    }
+    td::before {
+        content: attr(title);
+        font-weight: bold;
+        min-width: 120px;
+        padding-right: 5px;
+    }
+}
