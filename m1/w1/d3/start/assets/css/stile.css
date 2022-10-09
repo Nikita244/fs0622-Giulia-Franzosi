@@ -1,0 +1,136 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+/* HEADER */
+header{
+    height: 30vh;
+    background-color: rgb(0, 160, 198);
+    color: #fff;
+    text-align: center;
+}
+h1{
+    padding-top: 0.5em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+span{
+    background-color: #fff;
+    color: #00A0C6;
+}
+
+header h2{
+    color: black;
+    padding-top: 1.3em;
+    font-weight: 400;
+    font-size: 1.3em;
+    font-variant: small-caps;
+}
+
+#lineaheader{
+    border: none;
+    margin-top: 0px;
+    height: 4px;
+    background-color: #027794;
+    width: 100%;
+}
+/* MAIN */
+section h2{
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #027794;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+figure{
+    text-align: center;
+}
+.img{
+    padding: 6px;
+    border: thin #c0c0c0 solid;
+}
+/* ELEMENTI NEL MAIN */
+
+section{
+    padding-left:  1em;
+    padding-right:  1em;
+    line-height: 1.6em;
+}
+address{
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+b{
+    font-weight: bold;
+}
+a{
+    color: rgb(185, 30, 30);
+    text-decoration: underline;
+}
+a:link{
+    color: rgb(185, 30, 30);
+}
+blockquote{
+    padding:1.5em;
+    background-color: #ddd;
+    border-radius: 1em;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+strong{
+    color: #027794;
+}
+hr{
+    border-top: 1px dashed black;
+    width: 90%;
+    margin-top: 2em;
+
+}
+h3{
+    font-weight:600 ;
+    font-size: 1.2em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+mark{
+    background-color: #027794;
+    color: #fff;
+}
+ul{
+    padding-left: 2em;
+    padding-top: 1em;
+}
+dd{
+    padding-left: 2em;
+}
+/* FOOTER */
+footer{
+    margin-top: 2em;
+    background-color: #353535;
+    border-top: 4px solid #00A0C6;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    line-height: 1.5em;
+}
+kbd{
+    color: yellow;
+    font-style: italic;
+}
+small{
+   color: rgb(143, 140, 140); 
+   padding-top: 1.2em;
+}
+p{
+    padding-top: 1em;
+}
