@@ -1,0 +1,19 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(-45deg, #D75F1A, #B93611, #D65E1A);
+    background-repeat: no-repeat;
+    line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #ffffff;
+}
