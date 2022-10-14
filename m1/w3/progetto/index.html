@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice con JavaScript</title>
+    <meta name="description" content="La mia prima calcolatrice con JavaScript.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+<body>
+    <div class="titolo">
+        <h1 class="bounce">Facciamo i conti...</h1>
+    </div>
+    <div id="calcolatrice">
+        <div class="container" id="primafila">
+            <input type="text" name="display" id="calcoli" readonly="readonly" class="display">
+            <hr>
+        </div>
+        <div class="container">
+            <input type="submit" id="7" value="7" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="8" value="8" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="9" value="9" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="/" value="&divide" onclick="f(this.id)" class="tastoGrigio">
+            <input type="submit" id="&#177" value="&#177" onclick="plusminus(this.id)" class="tastoGrigio">
+        </div>
+        <div class="container">
+            <input type="submit" id="4" value="4" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="5" value="5" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="6" value="6" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="*" value="x" onclick="f(this.id)" class="tastoGrigio">
+            <input type="submit" value="C" onclick="cancella()" class="tastoGrigio">
+        </div>
+        <div class="container">
+            <input type="submit" id="1" value="1" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="2" value="2" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="3" value="3" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="f(this.id)" class="tastoGrigio">
+            <input type="submit" id="&#8730;" value="&#8730;" onclick="calcoloRadice()" class="tastoGrigio">
+        </div>
+        <div class="container">
+            <input type="submit" id="00" value="00" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="0" value="0" onclick="f(this.id)" class="tasto">
+            <input type="submit" id="." value="." onclick="f(this.id)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="f(this.id)" class="tastoGrigio">
+            <input type="submit" id="**" value="x²" onclick="f(this.id)" class="tastoGrigio">
+        </div>
+        <div class="container">
+            <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

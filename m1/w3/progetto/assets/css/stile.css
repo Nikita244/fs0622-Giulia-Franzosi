@@ -1,0 +1,123 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/mockup_scrivania2.jpg)no-repeat center fixed;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 5px;
+    
+}
+.titolo{
+    background-color: rgba(21, 20, 20, 0.751);
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-20px);}
+      60% {transform: translateY(-10px);}
+  }
+  
+#calcolatrice {
+    width: 300px;
+    height: 415px;
+    position: fixed;
+    top: 140px;
+    left: 265px;
+    border-radius: 15px;
+}
+
+#calcolatrice .container {
+    display: none;
+}
+
+#calcolatrice:hover .container {
+    display: block;
+    z-index: 1;
+}
+
+#calcolatrice:hover {
+    background-color: rgb(157, 155, 155);
+    box-shadow: 10px 10px 15px rgb(21, 20, 20);
+    border: 2px solid rgb(121, 121, 121);
+}
+
+.container {
+    z-index: 0;
+    text-align: center;
+}
+
+.tasto {
+    background-color: #4e4e4e;
+    color: #dbdbdb;
+    font-size: 1.5em;
+    border: none;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #2e2d2d;
+    transform: perspective(400px) rotateX(5deg);
+}
+
+.tastoGrigio {
+    background-color: rgb(36, 36, 36);
+    color: #dbdbdb;
+    font-size: 1.5em;
+    border: none;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px #2e2d2d;
+}
+
+.display {
+    background: none;
+    background-color: rgb(145, 150, 137);
+    font-size: 40px;
+    color: #2e2d2d;
+    border: #4c4c4c solid 3px;
+    border-radius: 5px;
+    margin: 4px 2px;
+    width: 274px;
+    height: 70px;
+    text-align: right;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    box-shadow: 5px -10px 20px rgba(49, 54, 46, 0.872) inset;
+    transform: perspective(400px) rotateX(-7deg);
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+hr {
+    width: 95%;
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 12px 2px black
+}
+
+.uguale {
+    width: 282px;
+    background-color: rgb(179, 50, 7);
+}
+
+#primafila {
+    margin-bottom: 10px;
+}
