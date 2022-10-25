@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.5em;
+}
+h1{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+fieldset{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 1em;
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: aliceblue;
+    background-color: darkgreen;
+    border: none;
+    margin-bottom: 1.5em;
+}
+ul{
+    padding-top: 1.5em;
+}
+ul{
+    display: inline-block;
+    flex-direction: column;
+}
+li{
+    list-style-type:none ;
+    margin-bottom: 1.5em;
+    background-color: rgb(224, 224, 224);
+
+}
+li:nth-child(even){
+    background-color: rgb(196, 195, 195);
+}
+#fermati{
+    padding-bottom: 3em;
+    padding-top: 1em;
+}
+#articoli, #fermati{
+    font-weight: bold;
+    font-size: 1.2em;
+}
