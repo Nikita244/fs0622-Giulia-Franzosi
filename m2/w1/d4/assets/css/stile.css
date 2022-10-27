@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 100px;
+    color: rgb(21, 193, 21);
+    font-size: 2.4em;
+}
+
+h3{
+    padding: 25px 0;
+}
+.dropdown{
+    position: relative;
+}
+
+#menu{
+    width: 80px; 
+    height: 80px; 
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+
+#menu:focus{
+    background-color: dodgerblue;
+}
+
+#content{
+    position: absolute;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#content a{
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background-color: #b1a0dd;
+}
+#content a:hover{
+    background-color:lightgrey;
+}
+button{
+    margin-right: 0.5em;
+    padding: 2px 8px;
+    font-size: 16px;
+}
+ul{
+    padding-left: 1em;
+}
+.evidenziato{
+    color: red;
+}
+
+.doIt{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
