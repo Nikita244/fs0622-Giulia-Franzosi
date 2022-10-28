@@ -1,0 +1,182 @@
+* {
+    font-family: 'Lexend', sans-serif;
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/halloween-wallpaper-with-evil-pumpkins_23-2149122584.jpg?w=1060&t=st=1666950477~exp=1666951077~hmac=11b4f814b8d30e5d48262d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 900px;
+    margin: auto;
+    background-color: rgba(8, 8, 8, 0.701);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icon-grid {
+    /*flex*/
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-evenly;
+margin-top: 3em;
+}
+
+.show {
+/* visibilità e opacità */
+visibility: visible;
+opacity: 100;
+}
+
+#griglia>div {
+    /* dimensioni e margini */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:radial-gradient( #45ae03,#2c6906);
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 120px;
+    height: 120px;
+    
+}
+#griglia>div img{
+    width: 100%;
+    border-radius: 10px;
+  
+}
+.timer {
+    padding: 10px 0;
+    color: white;
+}
+
+.icon {
+    font-size: 80px;
+    text-align: center;
+    visibility: visible !important;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: wait;
+}
+
+.show {
+    /* agganciare animation-name rotazione carta */
+    animation-name: rotazione-carta;
+    animation-duration: .5s;
+    background-color: #474455;
+    border: 1px solid #474455;
+    border-radius: 10px;
+    visibility: visible;
+    opacity: 100;
+}
+
+.find {
+    /* agganciare animation-name indovinato */
+    animation-name: indovinato;
+    animation-duration: .5s;
+    background-color: #474455;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    
+}
+
+.button {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #761970;
+    border: none;
+}
+
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal.active {
+    display: flex;
+}
+
+#modal h2 {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+    #griglia>div {
+        margin: 5px 5px;
+        width: 80px;
+        height: 80px; 
+    }
+    .icon {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 230px;
+    }
+    #griglia>div {
+        margin: 5px 5px;
+        width: 40px;
+        height: 40px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+}
+
+@keyframes indovinato { /* animazione quando si indovina */
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes rotazione-carta { /* animazione quando ruota la carta */
+    from {
+        transform: perspective(300px) rotate3d(0, 1, 0, 80deg);
+        animation-timing-function: ease-in;
+       }
+    
+       50% {
+        transform: perspective(300px) rotate3d(0, 1, 0, -10deg);
+        animation-timing-function: ease-in;
+       }
+    
+       to {
+        transform: perspective(300px);
+        animation-timing-function: ease-in;
+       }
+    }
