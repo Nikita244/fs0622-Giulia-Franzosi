@@ -1,0 +1,63 @@
+@import 'variabili';
+@import 'mixin';
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    font-weight: lighter;
+}
+#main-menu{
+    background-color: map-get($colori, 'blu');
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px map-get($colori, 'arancione');
+        ul{
+            display: inline-flex;
+            height: 25px;
+            list-style: none;
+            padding-inline-start: 15px;
+        }
+        li{
+            padding-left: 20px;
+        }
+        a{
+            color: map-get($colori, 'bianco');
+            @include link;
+        }
+}
+
+a{
+    color: map-get($colori, 'arancione');
+    @include link;
+}
+
+#main{
+    display: flex;
+    padding-left: 180px;
+}
+#content{
+    flex-basis: 60%;
+}
+#sidebar{
+    align-items: center;
+    margin-left: 80px;
+    li{
+        @include aside;
+    }
+}
+
+#sidebar li:hover{
+    background-color: rgb(192, 189, 189);
+}
+
+button{
+    background-color: map-get($colori, 'giallo');
+    color: white;
+    padding: 5px 8px; 
+}
+
+#footer{
+    background-color: map-get($colori, 'celeste');
+    padding: 40px;
+}

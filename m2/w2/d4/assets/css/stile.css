@@ -1,0 +1,71 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+#main-menu {
+  background-color: navy;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px orange;
+}
+#main-menu ul {
+  display: inline-flex;
+  height: 25px;
+  list-style: none;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+}
+#main-menu li {
+  padding-left: 20px;
+}
+#main-menu a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#main {
+  display: flex;
+  padding-left: 180px;
+}
+
+#content {
+  flex-basis: 60%;
+}
+
+#sidebar {
+  align-items: center;
+  margin-left: 80px;
+}
+#sidebar li {
+  list-style-type: none;
+  border-bottom: 1px dashed rgb(155, 155, 155);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 90px;
+  padding-left: 10px;
+}
+
+#sidebar li:hover {
+  background-color: rgb(192, 189, 189);
+}
+
+button {
+  background-color: rgb(245, 193, 6);
+  color: white;
+  padding: 5px 8px;
+}
+
+#footer {
+  background-color: rgb(71, 109, 198);
+  padding: 40px;
+}/*# sourceMappingURL=stile.css.map */
