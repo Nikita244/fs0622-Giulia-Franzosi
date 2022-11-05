@@ -1,0 +1,27 @@
+/*FUNZIONE 1 COLORE TESTO*/
+@function imposta-color-txt($colors) {
+    @if (lightness($colors)> 50) {
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
+
+/*FUNZIONE 2 CHE CAMBIA IL COLORE TESTO IN BASE ALLA LUMINOSITA' DELLO SFONDO*/
+@function colorOnBackground($color) {
+    @if (lightness($color)> 50) {
+      @return $black;
+    }
+    @else {
+      @return $gray-200;
+    }
+}
+
+
+
+/*DARK-THEME SCHERMI MOBILE*/
+@mixin dark {
+    @media screen and (max-width: 768px) {
+        @content
+    }
+}
