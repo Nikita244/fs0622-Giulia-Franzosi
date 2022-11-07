@@ -10,7 +10,7 @@ function Angrafica(_nome, _cognome, _eta) {
     this.calcolaEta = function(){
         let data = new Date (this.eta)
         let anno = data.getFullYear()
-        return anno - data;
+        return (anno - data);
     }
     //secondo metodo 
     this.aggiungiRiga = function(){
