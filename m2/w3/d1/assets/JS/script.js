@@ -8,9 +8,12 @@ function Angrafica(_nome, _cognome, _eta) {
     this.eta = _eta;
     //primo metodo
     this.calcolaEta = function(){
-        let data = new Date (this.eta)
-        let anno = data.getFullYear()
-        return (anno - data);
+        let data = new Date (this.eta);
+        let anno = data.getFullYear();
+        let annoCorrente = new Date ();
+        annoCorrente = annoCorrente.getFullYear ();
+        let eta =  annoCorrente - anno;
+        return eta;
     }
     //secondo metodo 
     this.aggiungiRiga = function(){
