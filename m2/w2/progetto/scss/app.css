@@ -11014,10 +11014,6 @@ textarea.form-control-lg {
   }
 }
 
-#partnership, svg, #carousel {
-  background-color: #dee2e6;
-}
-
 @media screen and (max-width: 768px) {
   path {
     fill: #343a40;
