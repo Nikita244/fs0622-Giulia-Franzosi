@@ -1,0 +1,12 @@
+.pagine span {
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: .5;
+}
+.pagine span:hover {
+    opacity: 1;
+}
+.pagine span.active {
+    opacity: 1;
+    pointer-events: none;
+}
