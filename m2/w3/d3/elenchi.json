@@ -1,0 +1,116 @@
+{
+    "utenti corso": [
+        {
+            "id":1,
+            "nome": "Francesco",
+            "cognome": "Bossoli",
+            "classe": "06-22 A"
+        },
+        {
+            "id":2,
+            "nome": "Ilaria",
+            "cognome": "Cognata",
+            "classe": "06-22 A"
+        },
+        {
+            "id":3,
+            "nome": "Francesco",
+            "cognome": "De Carolis",
+            "classe": "06-22 A"
+        },
+        {
+            "id":4,
+            "nome": "Andrea",
+            "cognome": "Cursi",
+            "classe": "06-22 A"
+        },
+        {
+            "id":5,
+            "nome": "Lorenzo",
+            "cognome": "Altomonte",
+            "classe": "06-22 A"
+        },
+        {
+            "id":6,
+            "nome": "Giulia",
+            "cognome": "Franzosi",
+            "classe": "06-22 A"
+        }
+    ],
+    "canzoni preferite": [
+        {
+            "id":1,
+            "nome": "Thunderstruck",
+            "gruppo": "AC/DC",
+            "anno": "1990"
+        },
+        {
+            "id":2,
+            "nome": "Holiday",
+            "gruppo": "Green Day",
+            "anno": "2004"
+        },
+        {
+            "id":3,
+            "nome": "Sweet Child O'Mine",
+            "gruppo": "Guns N'Roses",
+            "anno": "1987"
+        },
+        {
+            "id":4,
+            "nome": "Thunderstruck",
+            "gruppo": "AC/DC",
+            "anno": "1990"
+        },
+        {
+            "id":5,
+            "nome": "Castle of glass",
+            "gruppo": "Linkin Park",
+            "anno": "2012"
+        },
+        {
+            "id":6,
+            "nome": "Ordinary man",
+            "gruppo": "Ozzy Osbourne",
+            "anno": "2020"
+        }
+    ],
+    "film preferiti": [
+        {
+            "id":1,
+            "nome": "Il Gladiatore",
+            "genere": "azione",
+            "anno": "2000"
+        },
+        {
+            "id":2,
+            "nome": "The Accountant",
+            "genere": "azione",
+            "anno": "2016"
+        },
+        {
+            "id":3,
+            "nome": "The Equalizer",
+            "genere": "azione",
+            "anno": "2014"
+        },
+        {
+            "id":4,
+            "nome": "American Sniper",
+            "genere": "azione",
+            "anno": "2014"
+        },
+        {
+            "id":5,
+            "nome": "Star Trek",
+            "genere": "Sci-fi",
+            "anno": "2007"
+        },
+        {
+            "id":6,
+            "nome": "Thor",
+            "genere": "Fantasy",
+            "anno": "2011"
+        }
+    ]
+}
