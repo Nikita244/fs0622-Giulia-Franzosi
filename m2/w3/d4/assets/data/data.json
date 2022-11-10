@@ -1,0 +1,40 @@
+{
+    "lyrics": [
+        {
+            "id":1,
+            "nome": "Thunderstruck",
+            "gruppo": "AC/DC",
+            "anno": "1990"
+        },
+        {
+            "id":2,
+            "nome": "Holiday",
+            "gruppo": "Green Day",
+            "anno": "2004"
+        },
+        {
+            "id":3,
+            "nome": "Sweet Child O'Mine",
+            "gruppo": "Guns N'Roses",
+            "anno": "1987"
+        },
+        {
+            "id":4,
+            "nome": "Thunderstruck",
+            "gruppo": "AC/DC",
+            "anno": "1990"
+        },
+        {
+            "id":5,
+            "nome": "Castle of glass",
+            "gruppo": "Linkin Park",
+            "anno": "2012"
+        },
+        {
+            "id":6,
+            "nome": "Ordinary man",
+            "gruppo": "Ozzy Osbourne",
+            "anno": "2020"
+        }
+    ]
+}
