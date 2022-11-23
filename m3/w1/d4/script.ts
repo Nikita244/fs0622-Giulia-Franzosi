@@ -98,7 +98,7 @@ function printCapi(){
     })
 }
 
-printCapi();
+
 
 
 
