@@ -1,0 +1,86 @@
+<div class="container mt-4">
+    <h1 class="text-center">TD Form Hero</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <form (ngSubmit)="submit()" #form="ngForm">
+                        <div ngModelGroup="heroInfo" id="heroInfo" #heroGroup="ngModelGroup">
+                            <div class="form-group">
+
+                                <label for="username">Nome</label>
+                                <input type="text" id="username" [ngModel]="heroForm.defNome" name="username"
+                                    class="form-control" required #username="ngModel">
+                                <div class="alert alert-primary" role="alert"
+                                    *ngIf="username.invalid && username.touched">
+                                    Questo campo è obbligatorio
+                                </div>
+
+                                <label for="alterego">Alterego</label>
+                                <input type="text" id="alterego" [ngModel]="heroForm.defAlterego" name="alterego"
+                                    class="form-control" required #alterego="ngModel">
+                                <div class="alert alert-primary" role="alert"
+                                    *ngIf="alterego.invalid && alterego.touched">
+                                    Questo campo è obbligatorio
+                                </div>
+                            </div>
+
+
+                                <label for="secret">Superpotere</label>
+                                <select id="secret" [ngModel]="heroForm.question" name="secret" class="form-select">
+                                    <option value="Velocità">Velocità</option>
+                                    <option value="Invisibilità">Invisibilità</option>
+                                    <option value="Raggi X">Raggi X</option>
+                                    <option value="Miliardario">Miliardario</option>
+                                </select>
+
+
+                            <div class="form-group">
+                                <label for="nemico">Nemico</label>
+                                <input type="text" id="nemico" [ngModel]="heroForm.defNemico" name="nemico"
+                                    class="form-control" required #nemico="ngModel">
+                                <div class="alert alert-primary" role="alert" *ngIf="nemico.invalid && nemico.touched">
+                                    Questo campo è obbligatorio
+                                </div>
+
+                                <label for="alterego">Pianeta</label>
+                                <input type="text" id="pianeta" [ngModel]="heroForm.defPianeta" name="pianeta"
+                                    class="form-control" required #pianeta="ngModel">
+                                <div class="alert alert-primary" role="alert"
+                                    *ngIf="pianeta.invalid && pianeta.touched">
+                                    Questo campo è obbligatorio
+                                </div>
+
+                                <label for="alterego">Debolezza</label>
+                                <input type="text" id="debolezza" [ngModel]="heroForm.defDebolezza" name="debolezza"
+                                    class="form-control" required #debolezza="ngModel">
+                                <div class="alert alert-primary" role="alert"
+                                    *ngIf="debolezza.invalid && debolezza.touched">
+                                    Questo campo è obbligatorio
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary my-3" [disabled]="form.invalid">Crea</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div *ngIf="hero" class="col">
+                <h2>🦸 Il tuo Hero 🦸</h2>
+                <p>Nome: {{ hero.username }}</p>
+                <p>Alterego: {{ hero.alterego }}</p>
+                <p>Superpotere: {{ hero.secret }}</p>
+                <p>Nemico: {{ hero.nemico}}</p>
+                <p>Pianeta: {{ hero.pianeta }}</p>
+                <p>Debolezza: {{ hero.debolezza }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
