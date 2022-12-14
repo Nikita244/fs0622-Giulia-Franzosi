@@ -1,0 +1,60 @@
+<div class="container-fluid w-100">
+    <div class="row">
+        <div class="col-6 col-lg-2 col-md-3 col-sm-3 " id="sidebar" *ngIf="token">
+            <div class="d-flex flex-column flex-shrink-0  p-2 text-white bg-dark w-100 sticky-top"
+                style="height: 100vh;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="35" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4">Menu</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active bg-danger" aria-current="page" [routerLink]="['/home']"
+                            routerLinkActive="active">
+                            <svg class="bi me-2" width="16" height="16">
+                            </svg>
+                            Film
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link text-white" [routerLink]="['/user']" routerLinkActive="active">
+                            <svg class="bi me-2" width="16" height="16">
+                            </svg>
+                            Profilo
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown ps-4 pb-3">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false" *ngIf="token">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1152/1152379.png?w=740&t=st=1670573075~exp=1670573675~hmac=a88a7d45e634fc62b3f8904991b1e80c80407712152ac371e225e3ba16213777"
+                            alt="" width="52" height="52" class="rounded-circle me-2">
+                        <button type="button" class="btn btn-outline-danger ms-2" (click)="logout()" [routerLink]="['']"
+                            routerLinkActive="active" *ngIf="token">Esci</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" *ngIf="!token">
+
+            <div class="text-center mt-5 pt-3">
+                <h3 class="text-white">Non sei autorizzato, effettua il login o registrati</h3>
+                <a class="nav-link pt-2 mt-5" id="feed" [routerLink]="['']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Gia registrato? Accedi</a>
+
+                <a class="nav-link pt-2 mt-5" id="feed" [routerLink]="['/register']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Non sei ancora registrato? Registrati</a>
+            </div>
+        </div>
+        <div class="col-6 col-lg-10 col-md-9 col-sm-9 mt-3 d-flex flex-wrap justify-content-evenly" id="card">
+            <app-card *ngFor="let f of films; let i = index" [film]="f"></app-card>
+
+        </div>
+    </div>
+</div>

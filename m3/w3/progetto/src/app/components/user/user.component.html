@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 col-lg-2 col-md-3 col-sm-3 " id="sidebar">
+            <div class="d-flex flex-column flex-shrink-0  p-2 text-white bg-dark w-100 sticky-top"
+                style="height: 100vh;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="35" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4">Menu</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li>
+                        <a href="#" class="nav-link text-white" [routerLink]="['/home']">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#user" />
+                            </svg>
+                            Film
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link active bg-danger" aria-current="page">
+                            <svg class="bi me-2" width="16" height="16">
+                                <use xlink:href="#user" />
+                            </svg>
+                            Profilo
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown ps-4 pb-3">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1152/1152379.png?w=740&t=st=1670573075~exp=1670573675~hmac=a88a7d45e634fc62b3f8904991b1e80c80407712152ac371e225e3ba16213777"
+                            alt="" width="52" height="52" class="rounded-circle me-2">
+                        <button type="button" class="btn btn-outline-danger ms-2" (click)="logout()" [routerLink]="['']"
+                            routerLinkActive="active">Esci</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-10 col-md-9 col-sm-9 mt-5">
+            <div class="container">
+                <h4 class="text-white"><span><img
+                            src="https://cdn-icons-png.flaticon.com/512/1152/1152379.png?w=740&t=st=1670573075~exp=1670573675~hmac=a88a7d45e634fc62b3f8904991b1e80c80407712152ac371e225e3ba16213777"
+                            alt="" width="72" height="72" class="rounded-circle me-2"></span> Info utente:</h4>
+                <br>
+                <br>
+
+                <p class="h5 ps-3"><i class="bi bi-person-circle text-danger  ps-2"></i> Nome: {{user!.nome}} </p>
+                <br>
+                <p class="h5 ps-3"><i class="bi bi-envelope text-danger  ps-2"></i> Email: {{user!.email}} </p>
+                <br>
+
+                <p class="h5 ps-3"><i class="bi bi-heart-pulse text-danger ps-2"></i> Abbonato da febbraio 2019</p>
+                <br>
+
+                <p class="h5 ps-3"><i class="bi bi-eye text-danger  ps-2"></i> Filtro famiglia: tutte le fasce di età
+                </p>
+                <br>
+
+                <p class="h5 ps-3"><i class="bi bi-credit-card text-danger  ps-2"></i> Il tuo piano tarriffario mensile:
+                    9.90 €</p>
+            </div>
+        </div>
+    </div>
+</div>

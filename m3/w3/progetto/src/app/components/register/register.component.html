@@ -1,0 +1,45 @@
+<div class="container-fluid d-flex align-items-center">
+<div class="container" id="form">
+    <h3 class="text-center text-danger">Registrati per accedere</h3>
+    <div class="container text-center mt-4" id="popcorn">
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1152/1152379.png?w=740&t=st=1670573075~exp=1670573675~hmac=a88a7d45e634fc62b3f8904991b1e80c80407712152ac371e225e3ba16213777"
+          alt="" width="72" height="72" class="rounded-circle me-2">
+      </div>
+
+    <form #f="ngForm" (ngSubmit)="register(f)" >
+        <div class="pt-2">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" required ngModel name="nome" #nome="ngModel" class="form-control">
+            <div class="alert alert-danger" role="alert" *ngIf="nome.touched && nome.invalid">
+                Campo obbligatorio!
+            </div>
+            <br>
+            <div class="mb-1">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" required ngModel name="email" #email="ngModel" class="form-control">
+                <div class="alert alert-danger" role="alert" *ngIf="email.touched && email.invalid">
+                    Campo obbligatorio!
+                </div>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" required ngModel name="password" #password="ngModel" class="form-control">
+                <div class="alert alert-danger" role="alert" *ngIf="password.touched && password.invalid">
+                    Campo obbligatorio!
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger" id="gradient" [ngClass]="{'disabled':f.invalid}">Registrati</button>
+                <a class="nav-link pt-2" id="feed" [routerLink]="['']" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">Gia registrato? Accedi</a>
+            </div>
+        </div>
+        <h4 class="text-center pt-3" *ngIf="err">Errore: {{err}} </h4>
+    </form>
+
+
+</div>
+</div>

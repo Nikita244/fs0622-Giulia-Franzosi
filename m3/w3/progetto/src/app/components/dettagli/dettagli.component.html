@@ -1,0 +1,56 @@
+<div class="container-fluid" *ngIf="token">
+
+    <div class="row">
+        <div class="col-md-4 text-center mt-1 pt-1">
+
+
+            <br>
+            <img class="img-fluid mt-5" id="locandina" src="http://image.tmdb.org/t/p/w300/{{film.poster_path}}">
+
+
+        </div>
+
+        <div class="col-md-8  mt-4 px-5 pt-5">
+            <div class="embed-responsive embed-responsive-16by9 mt-2">
+
+                <iframe class="embed-responsive-item" width="560" height="315" *ngIf="film"[src]="film.trailer_path | embed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ="videoId"></iframe>
+            </div>
+
+
+            <h2 class="text-white pt-5">{{film.title}}</h2>
+
+            <p class="h5 text-white pt-3">{{film.overview}}</p>
+
+            <p class="h5 text-white pt-3"><span class="color">Data di uscita: </span>{{film.release_date}}</p>
+            <p class="h5 text-white pt-3"><span class="color">Lingua originale: </span>{{film.original_language}}</p>
+            <p class="h5 text-white pt-3"><span class="color">Media voti: </span>{{film.vote_average}}</p>
+            <p class="h5 text-white pt-3"><span class="color">Numero di voti: </span>{{film.vote_count}}</p>
+            <p class="h5 text-white pt-3"><span class="color">Indice di gradimento: </span>{{film.popularity}}</p>
+
+            <button class="btn btn-danger my-3" [routerLink]="['/home']"
+                routerLinkActive="active">Indietro</button>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" *ngIf="!token">
+
+    <div class="text-center mt-5 pt-3">
+        <h3 class="text-white">Non sei autorizzato, effettua il login o registrati</h3>
+        <a class="nav-link pt-2 mt-5" id="feed" [routerLink]="['']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">Gia registrato? Accedi</a>
+
+        <a class="nav-link pt-2 mt-5" id="feed" [routerLink]="['/register']" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">Non sei ancora registrato? Registrati</a>
+    </div>
+</div>

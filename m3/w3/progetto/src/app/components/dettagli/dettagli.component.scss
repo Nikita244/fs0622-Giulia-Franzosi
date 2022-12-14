@@ -1,0 +1,23 @@
+.container-fluid{
+    background-color: rgb(31, 30, 30);
+    height: 100%;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.color{
+    color:#dc3546dd;
+}
+
+#feed:hover {
+    color: rgb(220, 53, 69);
+    text-decoration: underline;
+
+  }
+#locandina{
+    width: 560px;
+}

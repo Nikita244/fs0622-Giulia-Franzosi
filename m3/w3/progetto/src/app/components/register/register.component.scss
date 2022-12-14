@@ -1,0 +1,84 @@
+.container-fluid {
+  background-image: url("../../../assets/img/IT-it-20221206-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  height: 100vh;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*ombra al click nell'input*/
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: rgba(220, 53, 70, 0.6) !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 70, 0.6) !important;
+}
+
+#form {
+
+  /*margin-top: 190px;*/
+  background-color: rgba(15, 15, 15, 0.85);
+  padding: 20px;
+  border-radius: 0px;
+}
+
+#popcorn {
+  filter: grayscale(1);
+}
+
+#feed:hover {
+  color: rgb(220, 53, 69);
+  text-decoration: underline;
+
+}
+
+#gradient{
+  background: linear-gradient(-45deg, rgb(185, 0, 0), rgb(255, 78, 96));
+	background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+  #form {
+    width: 75%;
+    margin: auto;
+
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #form {
+    width: 75%;
+
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #form {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #form {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #form {
+    width: 35%;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="card m-3" style="width: 15rem;" >
+    <img [src]="'https://image.tmdb.org/t/p/w300' + film.poster_path" class="card-img-top" alt="...">
+    <div class="card-body bg-dark p-3">
+
+        <i class="bi me-5 ms-2" [ngClass]="liked? 'bi-heart-fill':'bi-heart'" (click)="toggleLike()"></i>
+
+        <button class="btn btn-outline-danger ms-5" [routerLink]="['/'+film.id]"
+            routerLinkActive="active">Dettagli</button>
+
+
+    </div>
+
+</div>
